@@ -1,7 +1,7 @@
 <div style="margin-top: 100px">
   <% @users.each do |user| %>
     <div>
-      <%= link_to user.name, edit_user_path(user.id) %> / <%= user.email %>
+      <%= link_to user.name, edit_user_path(user.id) %> / <%= decrypt(user.email) %>
     </div>
   <% end %>
   <%= link_to '新規', new_user_path%>
