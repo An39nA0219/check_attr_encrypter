@@ -1,0 +1,7 @@
+<%= form_with model:@user do |f| %>
+  <%= f.label '名前', :name %>
+  <%= f.text_field :name %>
+  <%= f.label 'メール', :email %>
+  <%= f.text_field :email %>
+  <%= f.submit '送信' %>
+<% end %>
